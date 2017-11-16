@@ -12,24 +12,23 @@
         <h1 class="title">Directory</h1>
         </header>
         <div class="bar bar-standard bar-header-secondary">
-        <input class='search-first' type="search"/>
-        <input class='search-last' type="search"/>
+        <input class='search-first' type="search"/> <input class='search-last' type="search"/>
         </div>
         <div class="content"></div>
     </script>
     <script id="employee-list-tpl" type="text/template">
         <ul class="table-view">
-        {{#each this}}
-        <li class="table-view-cell media">
-        <a href="#employees/{{ id }}">
-        <img class="media-object pull-left" src="assets/pics/{{pic}}">
-        <div class="media-body">
-        {{firstName}} {{lastName}}
-        <p>{{title}}</p>
-        </div>
-        </a>
-        </li>
-        {{/each}}
+            {{#each this}}
+            <li class="table-view-cell media">
+                <a href="#employees/{{ id }}">
+                <img class="media-object pull-left" src="assets/pics/{{pic}}">
+                <div class="media-body">
+                    {{firstName}} {{lastName}}
+                    <p>{{title}}</p>
+                </div>
+                </a>
+            </li>
+            {{/each}}
         </ul>
     </script>
 
